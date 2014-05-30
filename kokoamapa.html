@@ -156,12 +156,12 @@
             <div id="trimestres">
                 
 	 
-     	<h1 style="border: 1px solid #CCC;background-color: #FFF;color: #666;font-family: verdana;">OBTENER COORDENADAS DE UN PUNTO EN GOOGLE MAPS</h1>
+     	<h1 style="color: #666;font-family: verdana;">OBTENER COORDENADAS DE UN PUNTO EN GOOGLE MAPS</h1>
 	 	<form id="google" name="google" action="#">
  
 		<p><label>Direcci&oacute;n: </label>
 		<input style="width:400px" type="text" id="direccion" name="direccion" value=""/>
-		<button id="pasar" class="btn btn-primary">Obtener coordenadas</button> 
+		<button id="pasar" class="btn btn-primary">IR</button> 
 		</p>
 		
 		 
@@ -171,21 +171,23 @@
 
           
             <div id="zonas" class="form-group">
+
+
+		<div>
+		<img id="logo" width="80px" height="100px" style="float: centre;" src="static/img/kokoa.png" alt="kokologo"/>
+		</div>	
+
 		<!-- div donde se dibuja el mapa-->
 		<!--campos ocultos donde guardamos los datos-->
-    		<p class="help-block">Luego de ubicar un punto puedes copiar las coordenadas en el administrador.</p>
+    	<p class="help-block">Las coordenadas del punto son:</p>
 		<p><label>Latitud: </label><input type="text" readonly name="lat" id="lat"/></p>
 		<p><label> Longitud:</label> <input type="text" readonly name="lng" id="long"/></p>
 		<button id="ayuda" class="btn btn-primary" onclick="verayuda();">Ayuda</button> 
+
             </div>
 
             <div id="map_canvas"></div>
 
-	<div id="proyectos">
-
-		<img id="logo" class="img-thumbnail" width="120px" height="100px" style="float: left;" src="static/img/kokoa.jpg" alt="kokologo"/>
-		<br/>
-	</div>
         </div>
 
 
